@@ -1,0 +1,15 @@
+.card {
+    border: solid #8ace00 3px;
+    margin: 20px;
+    padding: 15px;
+    background-color: black;
+  }
+  
+  h1 {
+    color: #8ace00;
+  }
+  
+  p {
+    color: #8ace00;
+  }
+  
