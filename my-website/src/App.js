@@ -1,19 +1,16 @@
 import "./styles.css";
-import Card from "./Components/Card";
+import Card from "./Components/Card"
 
 export default function App() {
   return (
     <div className="App">
-      <Card Name="Credit Score" Description="Excellent!" />
-      <Card Name="Money in Checking" Description="Excellent!" />
-      <Card
-        Name="Money in Saving"
-        Description="We recommend you put some more money in your Saving account."
-      />
-      <Card
-        Name="Investments"
-        Description="We recommend you reach out to our investing team."
-      />
+      <Card Name="Nico" IDNum="06902" CBalance="$90,000"/>
+      <Card Name="Kei" IDNum="06903" CBalance="$45,902"/>
+      <Card Name="Shay" IDNum="06904" CBalance="$93,293"/>
+      <Card Name="Kat" IDNum="06905" CBalance="52,384"/>
+      <Card Name="Dorian" IDNum="06906" CBalance="$66,666"/>
+      <Card Name="Lorraine" IDNum="06907" CBalance="$34,288"/>
+      <Card Name="Maria" IDNum="06908" CBalance="$9,203"/>
     </div>
   );
 }
