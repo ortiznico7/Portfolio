@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import MyForm from "./MyForm";
 
 function App() {
+  
   return (
     <div className="App">
       <Card Name="Nico" IDNum="06902" CBalance="$90,000"/>
