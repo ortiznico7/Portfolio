@@ -13,3 +13,4 @@ class Account(models.Model):
     def __str__(self):
         return f"{self.accounttype} - {self.amountinacc}"
 # Create your models here.
+

@@ -3,7 +3,8 @@ from django.views.generic import ListView
 from django.views.generic.edit import CreateView
 from .models import Member
 from django.http import HttpResponse
-
+from django.contrib import admin
+from django.shortcuts import render
 
 class MemberList(ListView):
     template_name = "member_list.html"
@@ -22,6 +23,9 @@ def hello_myfin(request):
 def home(request):
     context = {'message': 'Welcome to MyFINANCE App!'}
     return render(request, 'home.html', context)
+
+def hello_myfin(request):
+    return HttpResponse("Hello from MyFinance app!")
 
 def hello_myfinance(request):
     return HttpResponse("Hello from MyFinance!")
