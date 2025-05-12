@@ -5,6 +5,8 @@ from .models import Member
 from django.http import HttpResponse
 from django.contrib import admin
 from django.shortcuts import render
+from django.contrib.auth.forms import UserCreationForm
+from django.shortcuts import render, redirect
 
 class MemberList(ListView):
     template_name = "member_list.html"
@@ -29,3 +31,13 @@ def hello_myfin(request):
 
 def hello_myfinance(request):
     return HttpResponse("Hello from MyFinance!")
+
+def register(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('login')
+        else:
+            form = UserCreationForm()
+        return render(request, 'register.html', {'form': form})
